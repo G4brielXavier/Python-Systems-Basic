@@ -49,7 +49,7 @@ def ask(st, w, lif, ctrl):
     letter = input("Adivinhe a letra: ").lower()
     
     
-    if not letter in letters_space_list:
+    if not letter in letters_space_list or not letter == word_process:
         lif += 1
         build_character(lif)
         
